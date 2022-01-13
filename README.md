@@ -11,29 +11,39 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## **Username validator**
 
-## Features
+### Usage
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+1. Add dependency to your package's pubspec.yaml file:
 
-## Getting started
+`dependencies:
+username_validator: ^0.0.1 # change to latest version`
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+2. Run from the command line:
 
-## Usage
+`$ pub get`
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+Alternatively, your editor might support pub. Check the docs for your editor to learn more.
 
-```dart
-const like = 'sample';
-```
+3. Import in your Dart code:
 
-## Additional information
+`import 'package:username_validator/username_validator.dart';`
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+
+## **Example**
+
+`bool simple = UValidator.validateThis(username: "jam_s")`
+
+`bool basic = UValidator.validateThis(pattern:RegPattern.basic,username: "jam_s")
+`
+
+`bool strict = UValidator.validateThis(pattern:RegPattern.strict,username: "jam_s")
+`
+
+## **Pattern**
+
+`RegPattern.simple`
+`RegPattern.basic`
+`RegPattern.strict`
+
