@@ -13,6 +13,8 @@ and the Flutter guide for
 
 ## **Username validator**
 
+A straightforward flutter username validator that provides common validation options.
+
 ### Usage
 
 1. Add dependency to your package's pubspec.yaml file:
