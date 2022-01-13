@@ -14,7 +14,7 @@ class UValidator {
     // The dot (.) or underscore (_) must not be the first character.
     // Numbers must not be the first character
     // The dot (.) or underscore (_) can appear consecutively in the middle of
-    // of two character, e.g., johnson..mima 0r james__doe etc.
+    // of two character, e.g., johnson..doe 0r james__doe etc.
     if (pattern == RegPattern.basic) {
       return RegExp(Pattern.basic).hasMatch(username);
     }
@@ -25,7 +25,7 @@ class UValidator {
     // Numbers must not be the first character
     // The dot (.) or underscore (_) must not be the first or last character.
     // The dot (.) or underscore (_) must not appear consecutively,
-    // e.g., johnson..mima 0r james__doe
+    // e.g., johnson..doe 0r james__doe
 
     else if (pattern == RegPattern.strict) {
       return RegExp(Pattern.strict).hasMatch(username);

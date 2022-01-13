@@ -1,5 +1,5 @@
 name: username_validator
-description:A straightforward flutter username validator that provides common validation options.
+description: A straightforward flutter username validator that provides common validation options.
 version: 0.0.1
 homepage: https://github.com/johnsonmima/username_validator
 
@@ -15,4 +15,3 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^1.0.0
-
